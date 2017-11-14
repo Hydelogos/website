@@ -1,0 +1,122 @@
+/* app css stylesheet */
+@media screen and (orientation:landscape) {
+    #content{
+        overflow: auto;
+    }
+}
+
+html{
+    min-height: 100%;
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
+}
+body{
+    background: url("img/background.jpeg") no-repeat fixed center;
+    background-size:cover;
+    color: white;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 100%;
+    text-align: center;
+    cursor: default;
+}
+
+#filter{
+    position: fixed;
+    padding: 0;
+    margin: 0;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0.6;
+    background-color: blueviolet;
+    z-index: 1;
+}
+
+#content{
+    z-index: 10;
+    padding: 0;
+    margin: 0 0 0 0;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+}
+
+.titleMain{
+    margin-top: 10vh;
+    font-size: 2.5em;
+    font-family: 'PT Sans', sans-serif;
+}
+
+.titleBox{
+    font-size: 1em;
+}
+
+.container{
+    margin-left: 0vw;
+}
+
+.box{
+    margin: 0;
+    display: inline-block;
+    width: auto;
+    height: auto;
+    padding: 0px 2vw 0px 2vw;
+    border: 4px solid white;
+}
+
+.box:hover{
+    cursor: pointer;
+}
+
+.menu {
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+    font-size: 0.9em;
+    list-style: none;
+    padding: 0 0 0.5em;
+    color: white;
+}
+
+.menu > li {
+    display: inline;
+    margin: 0.5em;
+}
+
+
+a:visited{
+    text-decoration: none;
+    color: white;
+}
+
+a:link{
+    text-decoration: none;
+    color: white;
+}
+
+
+.titleCenter{
+    text-align: center;
+}
+
+.footer{
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    height: auto;
+    width: auto;
+}
+
+.footer img{
+    max-height: 10vh;
+    max-width: 10vw;
+}

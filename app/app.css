@@ -1,0 +1,151 @@
+/* app css stylesheet */
+
+html{
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
+}
+
+body{
+  background: url("img/background.jpeg") no-repeat fixed center;
+  background-size:cover;
+  color: white;
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 100%;
+  cursor: default;
+}
+
+#filter{
+  position: fixed;
+  padding: 0;
+  margin: 0;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0.6;
+  background-color: blueviolet;
+  z-index: 1;
+}
+
+#content{
+  z-index: 10;
+  padding: 0;
+  margin: 0 0 0 10vw;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+}
+
+.titleMain{
+  margin-top: 25vh;
+  font-size: 3.5em;
+  font-family: 'PT Sans', sans-serif;
+}
+
+.titleBox{
+  font-size: 1.5em;
+}
+
+.container{
+  margin-left: 30vw;
+}
+
+.box{
+  margin: 0;
+  display: inline-block;
+  width: auto;
+  height: auto;
+  padding: 0px 5vw 0px 5vw;
+  border: 6px solid white;
+}
+
+.box:hover{
+  cursor: pointer;
+}
+
+.menu {
+  float: right;
+  margin-right: 10vw;
+  font-size: 1.1em;
+  list-style: none;
+  padding: 0 0 0.5em;
+  color: white;
+}
+
+.menu > li {
+  display: inline;
+  margin: 1em;
+}
+
+
+a:visited{
+  text-decoration: none;
+  color: white;
+}
+
+a:link{
+  text-decoration: none;
+  color: white;
+}
+
+.titleCenter{
+  text-align: center;
+  margin-right: 20vw;
+}
+
+.footer{
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  right: 10vw;
+  height: auto;
+  width: auto;
+}
+
+.footer img{
+  max-height: 10vh;
+  max-width: 10vw;
+}
+
+.project{
+  display: inline-block;
+  width: auto;
+  height: auto;
+  background-color: black;
+  border-radius: 5px;
+}
+
+.projectBox{
+  display: inline-block;
+  width: 20vw;
+  height: 25vh;
+  background-color: black;
+  border-radius: 5px;
+}
+
+.projectBox img{
+  width: 20vw;
+  height: 25vh;
+  position: absolute;
+  z-index: 10;
+  border-radius: 5px;
+}
+
+.projectBox img:hover{
+  opacity: 0.2;
+}
+
+.projectBox .projectDesc{
+  text-align: center;
+  position: relative;
+  z-index: 5;
+}
+
+
