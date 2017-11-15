@@ -148,4 +148,8 @@ a:link{
   z-index: 5;
 }
 
-
+.circle{
+	border-radius: 50%;
+	height: 300px;
+	width: 300px;
+}
