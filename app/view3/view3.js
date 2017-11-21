@@ -11,10 +11,10 @@ angular.module('myApp.view3', ['ngRoute'])
 
 .controller('View3Ctrl', function($scope, $timeout, Language) {
     $(".menu a").animate({
-       color: 'black'
+       color: 'white'
     });
     $("#filter").animate({
-      backgroundColor: "#882601",
+      backgroundColor: "#262228",
         opacity: 1
     });
     $scope.language = Language.getLangue();
@@ -24,20 +24,21 @@ angular.module('myApp.view3', ['ngRoute'])
 
     $scope.langue = {
         "en": {
-            titre1: "About Me",
-			age: "24 years old",
-			parcours: "Studies: Actually in my second year of BTS (BAC+2) in computer science under a work-study contract, I aim to pursue my study until I reach a BAC+5 level and become an engineer in the programming field.",
-			motivation: "I always was curious and passionate about new technologies and even more when I started coding. Always wanting to improve my skills I challenge myself everyday to become better at what I love."
+            titre1: "About Me:",
+            desc: "Full Stack developper under a work study contract since a year and a half, passionate since forever.",
+            desc2: "Skills in JQuery, NodeJS, Angular, PHP, C#, Java and Perl",
+            contact: "Contact Me"
         },
         "fr": {
-            titre1: "A Propos de Moi",
-			age: "24 ans",
-			parcours: "Parcours: Je suis actuellement en deuxième année de BTS (BAC+2) d'informatique en alternance et compte poursuivre mes études jusque BAC+5 afin de devenir ingénieur dans le domaine du développement informatique.",
-			motivation: "J'ai toujours été curieux et passionné sur le sujet des nouvelles technologies, et bien davantage quand j'ai decouvert la programmation. Voulant toujours améliorer mes competences je me défie chaque jour pour me perfectionner chaque fois plus à faire ce que j'aime."
+            titre1: "A Propos de moi:",
+            desc: "Développeur Full Stack en apprentissage depuis un an et demi, et passionné depuis toujours.",
+            desc2: "Compétences en JQuery, NodeJS, Angular, PHP, C#, Java et Perl",
+            contact: "Me Contacter"
         }
 
     };
-    $('.container .box')
+    var text = [];
+    $('.boxCircle')
         .off().on('mouseenter', function(){
         $(this).animate({color: "black", backgroundColor: "white"}, 200);
     })

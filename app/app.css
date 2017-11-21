@@ -149,7 +149,48 @@ a:link{
 }
 
 .circle{
-	border-radius: 50%;
-	height: 300px;
-	width: 300px;
+	height: 100px;
+	width: 100px;
+    border-radius: 50%;
+    float: left;
+    display: inline-block;
+    margin-top: 3%;
+}
+
+.desc{
+  display: block;
+  margin: auto;
+  width: auto;
+  display: inline-block;
+  margin: 15vh 14vw;
+}
+
+.descLittle{
+  float: right;
+  font-size: 1.4em;
+  width: 50vw;
+  display: inline-block;
+  margin-left: 2vw;
+  padding-left: 2vw;
+  border-left: 1px solid darkgrey;
+}
+
+.descLittle span{
+  font-size: 1.9em;
+}
+
+.boxCircle{
+  font-size: 2.7em;
+  margin-left: 29vw;
+  margin-top : 7vh;
+  border-radius: 50px;
+  text-align: center;
+  display: block;
+  width: fit-content;
+  padding: 0px 5vw 0px 5vw;
+  border: 3px solid white;
+}
+
+.boxCircle:hover{
+  cursor: pointer;
 }

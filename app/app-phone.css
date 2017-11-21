@@ -120,3 +120,35 @@ a:link{
     max-height: 10vh;
     max-width: 10vw;
 }
+
+.circle{
+    display: block;
+    border-radius: 50%;
+    height: 75px;
+    width: 75px;
+    text-align: center;
+    margin: auto;
+    margin-top: 12vh;
+}
+
+.desc{
+    width: 50vw;
+    text-align: center;
+    display: inline-block;
+}
+
+.boxCircle{
+    font-size: 1.5em;
+    margin: auto;
+    margin-top: 10vh;
+    border-radius: 50px;
+    text-align: center;
+    display: block;
+    width: fit-content;
+    padding: 0px 5vw 0px 5vw;
+    border: 3px solid white;
+}
+
+.boxCircle:hover{
+    cursor: pointer;
+}
