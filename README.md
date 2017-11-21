@@ -6,7 +6,6 @@
   <ul>
     <li>[x] Home Page</li>
     <li>[x] Projects Page</li>
-    <li>[ ] About Page</li>
     <li>[ ] Contact Page</li>
   </ul>
 </p>
